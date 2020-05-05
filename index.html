@@ -13,16 +13,16 @@
     <a-scene embedded arjs>
         <!-- importing asset without directly loading -->
         <a-assets>
-            <a-asset-item id="tree-obj" src="bunny.obj"></a-asset-item>
+            <a-asset-item id="tiki-obj" src="hawaian-tiki.obj"></a-asset-item>
         </a-assets>
         <!-- customized pattern to recognize image -->
-        <a-marker preset="custom" type="pattern" url="bunny.patt">
- <a-entity obj-model="obj: #tree-obj;" material="src: bunny.png; color: pink" position="0 0 0.1" scale="0.2 0.2 0.2" rotation="90 360 180">
+        <a-marker preset="custom" type="pattern" url="pattern-hawaian-tiki.patt">
+ <a-entity obj-model="obj: #tiki-obj;" material="src: hawaian.jpg;" width="10%" position="0 0 1.5" scale="0.1 0.1 0.1" rotation="180 360 360">
             </a-entity>
-            <a-entity position="0.25 0 0.4" rotation="-90 0 0" height="40%" width="40%" text="value: Classy Bunny - 1400 LKR; color: green">
+            <a-entity position="0.25 0 0.8" rotation="-90 0 0" height="80%" width="80%" text="value: Classy Bunny - 1400 LKR; color: green">
             </a-entity>
-            <a-entity position="0.25 0 -0.4" rotation="-90 0 0" height="40%" width="40%"
-                text="value: PerfectGift - A perfect choice; font: https://cdn.aframe.io/fonts/mozillavr.fnt;"></a-entity>
+            <a-entity position="0.25 0 1" rotation="-90 0 0" height="200%" width="200%"
+                text="value: PerfectGift - A perfect choice; font: https://cdn.aframe.io/fonts/mozillavr.fnt; tabSize: 12"></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
